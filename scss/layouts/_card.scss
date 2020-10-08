@@ -18,5 +18,42 @@
             font-size: 12px;
             line-height: 18px;
         }
+
+        &--style-2 {
+            text-align: left;
+
+            .chart__head {
+                h3 {
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .chart__content {
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin: 0;
+                }
+                canvas{
+                    margin-top: -20px;
+                }
+            }
+            .bar_chart_bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span{
+                    color: $green;
+                }
+            }
+        }
     }
 }
