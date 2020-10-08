@@ -1,0 +1,42 @@
+#sidebar {
+    padding: 50px 15px;
+
+    // sidebar__logo
+    .sidebar__logo {
+        margin-bottom: 30px;
+    }
+
+    .sidebar__nav {
+        .nav {
+            .nav-item {
+                display: block;
+                width: 100%;
+                .nav-link {
+                    color: $text-color;
+                    font-size: 15px;
+                    line-height: 21px;
+                    font-weight: $font-normal;
+                    display: block;
+                    margin-bottom: 15px;
+                    padding: 10px 0;
+
+                    &:hover {
+                        color: $nevy-blue;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-right: 8px;
+                    }
+                }
+
+                &--active {
+                    .nav-link {
+                        color: $nevy-blue;
+                    }
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.page__head {
+    margin-bottom: 30px;
+    .page__head__title {
+        h3 {
+            font-size: 22px;
+            line-height: 21px;
+            font-weight: $font-sm-bold;
+            color: $nevy-blue;
+        }
+    }
+
+    .page__head__btns {
+        .btn {
+            width: 110px;
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: $font-medium;
+            margin-left: 10px;
+
+            &:hover{
+                background-color: $nevy-blue;
+                border-color: $nevy-blue;
+            }
+            &--active{
+                background-color: $nevy-blue;
+                border-color: $nevy-blue;
+            }
+        }
+    }
+}

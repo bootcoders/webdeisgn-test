@@ -1,0 +1,22 @@
+.card-section {
+    .card {
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 20px 10px 20px;
+
+        h3 {
+            font-size: 26px;
+            line-height: 39px;
+            margin-bottom: 15px;
+            font-weight: $font-sm-bold;
+            color: $nevy-blue;
+        }
+
+        P {
+            color: $gray;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.billing-table {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    .table {
+        thead {
+            th {
+                color: $white;
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: $font-normal;
+                background-color: $primary;
+
+                &:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                &:last-child {
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+        }
+
+        tbody {
+            td {
+                .btn-weekly {
+                    background-color: $green-light;
+                    color: $green;
+                    width: 125px;
+                    height: 40px;
+                }
+            }
+        }
+
+
+        &--style-1 {
+            thead {
+
+                th {
+                    text-align: center;
+                }
+            }
+
+            tbody {
+                td {
+                    font-size: 20px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: $gray-light;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &--style-2 {
+
+
+            tbody {
+                td {
+                    font-size: 14px;
+                    line-height: 21px;
+                    vertical-align: middle;
+
+                    &.text-mute {
+                        color: $gray-light;
+                    }
+
+                    .btn-secondary {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $primary;
+                    }
+
+                    .btn-primary {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+
+                    .btn-danger {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $red;
+                    }
+                }
+
+                tr {
+                    &.due-billing {
+                        td {
+                            color: $red-thin;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table__footer {
+        .btn {
+            width: 110px;
+
+            img {
+                margin-right: 5px;
+            }
+
+            &-large {
+                width: 150px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}

@@ -5,107 +5,305 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;900&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./node_modules/chart.js/dist/Chart.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div id="sidebar">
-            <ul class="list-group">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+
+            <div class="sidebar__logo">
+                <a href="#" class="logo"> <img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="sidebar__nav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Home </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Clients </a></li>
+                    <li class="nav-item nav-item--active"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Tasks </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Appointments </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Live Chat </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Billing </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Agreements </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="nav_icon"> <img
+                                    src="images/Category.png" alt=""> </span> Reports </a></li>
+                </ul>
+            </div>
+
         </div>
 
         <div id="content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <!-- Header Section -->
+            <header class="header-section">
+                <div class="header__search">
+                    <form class="form-inline">
+                        <button class="btn btn-search" type="submit"> <img src="images/Search.png" alt="Search">
+                        </button>
+                        <input class="form-control " type="search" placeholder="Search">
                     </form>
                 </div>
-            </nav>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Debit Doctor LTD.</h1>
+                <div class="header__userInfo">
+                    <button class="btn btn-nification"><img src="images/Notification.png" alt="Notification"></button>
+                    <div class="userInfo">
+                        <div class="user__avatar">
+                            <img src="images/avatar.png" alt="avatar">
+                            <span class="has_online"></span>
+                        </div>
+                        <div class="user__name">
+                            <a href="#">Loggedin User <span class="caret-down"></span> </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-right">
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                </div>
-            </div>
+            </header>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+
+            <!-- Main Section -->
+            <main class="main-section">
+                <!-- page__head -->
+                <section class="page__head">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="page__head__title">
+                                <h3>Debit Doctor LTD.</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="page__head__btns text-right">
+                                <button class="btn btn-primary">Overview</button>
+                                <button class="btn btn--active btn-primary">Billing</button>
+                                <button class="btn btn-primary">Logs</button>
+                                <button class="btn btn-primary">View LP</button>
+                                <button class="btn btn-primary">Notification</button>
+                                <button class="btn btn-primary">Edit Client</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                </section>
+
+                <!-- Card Section -->
+                <section class="card-section">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h3>-£785.56</h3>
+                                <p>Balance</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h3>-£785.56</h3>
+                                <p>Total Payment</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h3>-£785.56</h3>
+                                <p>Max. Ad Speed</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h3>3</h3>
+                                <p>No. Of Top Up</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h3>-£785.56</h3>
+                                <p>text</p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                </section>
+
+                <!-- billing table -->
+                <section class="billing-table bg-white">
+                    <table class="table table-borderless table--style-1">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Payment Method</th>
+                                <th>Next Renewal</th>
+                                <th>Renewal Amount</th>
+                                <th>Number of Renewal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <button class="btn btn-weekly">Weekly</button> </td>
+                                <td>Card Payment</td>
+                                <td>27 August 2020</td>
+                                <td>£500.00</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="table__footer text-right pb-3">
+                        <button class="btn btn-primary"><img src="images/edit.png" alt=""> Edit</button>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                </section>
+                <!-- Card info and chart -->
+                <section class="billing-info">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-detail">
+                                <div class="row">
+                                    <div class="card_info col-md-6">
+                                        <h3>Billing Details</h3>
+                                        <div class="card__info_cover">
+                                            <img src="images/mastercard.png" alt="mastercard">
+                                        </div>
+                                        <div class="card_number">
+                                            <p>**** **** **** 1942</p>
+                                        </div>
+                                        <div class="card_expires_date">
+                                            <p>Expires 09/25</p>
+                                        </div>
+                                    </div>
+                                    <div class="billing_address col-md-6">
+                                        <h3>Billing Address</h3>
+                                        <div class="billing_address_detail">
+                                            <address>
+                                                10 John Street, Fleet, <br> Hampshire, GU10 5QJ
+                                            </address>
+                                        </div>
+                                        <div class="billing_address_phone">
+                                            <h3>Phone </h3>
+                                            <a href="#">01252 642786</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-chart">
+                                <div class="card__chart__head">
+                                    <h3>Chart Header</h3>
+                                </div>
+                                <div class="chart__canvas">
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-chart">
+                                <div class="card__chart__head d-flex justify-content-between  align-items-center">
+                                    <h3>Chart Header</h3>
+                                    <button class="btn"> View Details </button>
+                                </div>
+                                <div class="chart__canvas">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-           
+                </section>
+                <!-- billing table -->
+                <section class="billing-table bg-white">
+                    <table class="table table-borderless table--style-2">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Business Name</th>
+                                <th>Customer Email</th>
+                                <th>Issued On</th>
+                                <th>Paid On</th>
+                                <th>Method</th>
+                                <th>Attempts</th>
+                                <th>Type</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <button class="btn btn-secondary">Paid</button> </td>
+                                <td class="text-mute">ABC Builders LTD</td>
+                                <td class="text-mute">george@payperuistpmer.com</td>
+                                <td>13 Aug 2020</td>
+                                <td>27 Nov 2020</td>
+                                <td>Bank Transfer</td>
+                                <td>1</td>
+                                <td>Recurring</td>
+                                <td><button class="btn btn-secondary">PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td> <button class="btn btn-secondary">Paid</button> </td>
+                                <td class="text-mute">ABC Builders LTD</td>
+                                <td class="text-mute">george@payperuistpmer.com</td>
+                                <td>13 Aug 2020</td>
+                                <td>27 Nov 2020</td>
+                                <td>Bank Transfer</td>
+                                <td>1</td>
+                                <td>Recurring</td>
+                                <td><button class="btn btn-secondary">PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td> <button class="btn btn-secondary">Paid</button> </td>
+                                <td class="text-mute">ABC Builders LTD</td>
+                                <td class="text-mute">george@payperuistpmer.com</td>
+                                <td>13 Aug 2020</td>
+                                <td>27 Nov 2020</td>
+                                <td>Bank Transfer</td>
+                                <td>1</td>
+                                <td>Recurring</td>
+                                <td><button class="btn btn-secondary">PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td> <button class="btn btn-secondary">Paid</button> </td>
+                                <td class="text-mute">ABC Builders LTD</td>
+                                <td class="text-mute">george@payperuistpmer.com</td>
+                                <td>13 Aug 2020</td>
+                                <td>27 Nov 2020</td>
+                                <td>Bank Transfer</td>
+                                <td>1</td>
+                                <td>Recurring</td>
+                                <td><button class="btn btn-secondary">PDF</button></td>
+                            </tr>
+                            <tr class="due-billing">
+                                <td> <button class="btn btn-danger">Due</button> </td>
+                                <td>MYPC Limited</td>
+                                <td>Dave@example.com</td>
+                                <td>13 Aug 2020</td>
+                                <td>-</td>
+                                <td>Card Payment</td>
+                                <td>3</td>
+                                <td>Recurring</td>
+                                <td><button class="btn btn-secondary">PDF</button><button
+                                        class="btn btn-primary ml-2">Pay</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="table__footer text-right pb-3">
+                        <button class="btn btn-primary btn-large"> Create Invoice</button>
+                    </div>
+                </section>
+
+            </main>
+
+
+
+
         </div>
     </div>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/js/dist/index.js"></script>
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

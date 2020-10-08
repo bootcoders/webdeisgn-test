@@ -1,16 +1,33 @@
+// Variables
+@import 'variables';
+
+// Bootstrap Scss
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Base
+@import 'mixins';
+@import 'base';
+
+// Layouts
+@import 'layouts/layouts-dir';
 
 // write your css here
 #wrapper{
     display: flex;
     #sidebar{
-        width: 14rem!important;
+        width: 15rem !important;
         height: 100vh;
+        background-color: $white;
     }
 
     #content-wrapper{
         background-color: #f8f9fc;
         width: 100%;
         overflow-x: hidden;
+
+        .main-section{
+            padding: 20px;
+        }
     }
 }
+

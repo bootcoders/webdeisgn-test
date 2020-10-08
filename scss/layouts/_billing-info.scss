@@ -1,0 +1,52 @@
+.billing-info {
+    margin-top: 30px;
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+
+        &.card-detail {
+            padding: 20px 50px;
+
+            h3 {
+                font-size: 18px;
+                line-height: 27px;
+                color: $black;
+                margin-bottom: 15px;
+
+            }
+
+            .card_expires_date {
+                p {
+                    color: $gray-light;
+                }
+            }
+
+            .billing_address_detail {
+                color: $gray-light;
+            }
+
+            .billing_address_phone {
+                a {
+                    color: $gray-light;
+                }
+            }
+        }
+
+        //  card-chart
+        &.card-chart {
+            border-radius: 25px;
+
+            h3 {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .btn {
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
+    }
+}
