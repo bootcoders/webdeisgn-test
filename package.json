@@ -1,0 +1,22 @@
+{
+  "name": "web-designer-qestion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "scss": "node-sass scss/style.scss -o css",
+    "scss:watch": "npm run scss && node-sass scss/style.scss -wo css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "live-server": "^1.2.1"
+  }
+}
